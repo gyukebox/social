@@ -24,7 +24,7 @@ while True:
     except KeyError as e:
         print('total {} twits collected'.format(total_tweets))
         with open('keyword_tweets.json', 'w', encoding='utf8') as makefile:
-            json.dump(statuses, makefile, ensure_ascii=False, indent='\t')
+            json.dump(statuses, makefile, ensure_ascii=False, indent=4)
         break
     search_args = dict([kv.split('=') for kv in next_results[1:].split('&')])
     search_results = twitter_api.search.tweets(**search_args)
@@ -90,7 +90,7 @@ retweets = [
 ]
 
 with open('retweets.json', 'w', encoding='utf8') as makefile:
-    json.dump(retweets, makefile, indent='\t', ensure_ascii=False)
+    json.dump(retweets, makefile, indent=4, ensure_ascii=False)
 
 pt = PrettyTable(field_names=['Count', 'Screen Name', 'Text'])
 for row in sorted(retweets, reverse=True)[:10]:
