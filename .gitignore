@@ -1,4 +1,7 @@
 
 .idea/*
 .vscode/*
-__init__.py
+.idea/
+.vscode/
+__pycache__/
+*.json
