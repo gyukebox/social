@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from prettytable import PrettyTable
 
-CONSUMER_KEY = '0BJMlNC4TOqLaaTRSlsxSuaFS'
-CONSUMER_SECRET = 'PfJdnTvy3xYxp5telQUdTH1pZiqxltAC0mcDMCwdLasO9ZIkZZ'
-OAUTH_TOKEN = '	2414540239-hzYal8TcpfqITlkl2Cb2ZrtbzFP8Z2HZf4BC9Gu'
-OAUTH_SECRET = '02FE2aXJAc1zp4W5eZPbXcFaW0xU6bV3cpNpKfRh3BzSy'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+OAUTH_TOKEN = ''
+OAUTH_SECRET = ''
 
 auth = twitter.OAuth(OAUTH_TOKEN, OAUTH_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
 twitter_api = twitter.Twitter(auth=auth)
